@@ -1,6 +1,6 @@
 # RISC-V Zephyr Docker
 
-Build Zephyr firmware proejcts and flash (specifically RISC-V) targets from a Docker container! 
+Build [Zephyr](https://www.zephyrproject.org/) firmware projects and flash (specifically RISC-V) targets from a Docker container! 
 
 Intended for development tests without mangling the local machine, and allows CI build and flash sequences.
 
@@ -18,6 +18,8 @@ Compared to other publicly available Zephyr docker images, *this* container's be
 - No hardcoded version/dependencies - uses some bash tricks to ensure we use the latest (stable) Zephyr SDK and J-Link tools when building the docker container.
 
 # Usage
+
+Assumes you have Docker setup on your machine already. If not, see [Docker: Orientation and setup](https://docs.docker.com/get-started/).
 
 Build the docker image from the Dockerfile: `docker build --tag riscv-zephyr:0.4 .`
 
